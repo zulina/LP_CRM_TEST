@@ -37,12 +37,12 @@
   }
 }
 
-.btn_delete_all {
-  opacity: 0;
+.btn_delete_selected {
+  display: none;
 }
 
-.btn_delete_all_active {
-  opacity: 1;
+.btn_delete_selected_active {
+  display: block;
 }
 
 .item_delete {
