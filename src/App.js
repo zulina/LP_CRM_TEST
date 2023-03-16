@@ -20,7 +20,7 @@ let filterOptions = [];
 
 const getItemById = (id) => {
   for (let i = 0; i < data.length; i++) {
-    if (data[i].id == id) {
+    if (data[i].id === id) {
       return data[i];
     }
   }
@@ -29,7 +29,7 @@ const getItemById = (id) => {
 
 const getItemByPos = (pos) => {
   for (let i = 0; i < data.length; i++) {
-    if (data[i].pos == pos) {
+    if (data[i].pos === pos) {
       return data[i];
     }
   }
@@ -38,7 +38,7 @@ const getItemByPos = (pos) => {
 
 const getItemIndex = (pos) => {
   for (let i = 0; i < data.length; i++) {
-    if (data[i].pos == pos) {
+    if (data[i].pos === pos) {
       return i;
     }
   }
@@ -254,6 +254,7 @@ function App() {
           return true;
         }       
       }
+      return false;
     });
 
     items = dataFilter.map(item => {
